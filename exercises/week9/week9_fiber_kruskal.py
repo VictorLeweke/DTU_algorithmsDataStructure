@@ -24,7 +24,7 @@ sz = [1]*(N+1)
 MST_weight = 0
 
 for i, j, w in edges:
-    if find(i) != find(j):
+    if find(i,U) != find(j,U):
         union(i,j,U,sz)
         MST_weight += w
 
